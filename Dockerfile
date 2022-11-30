@@ -2,7 +2,7 @@
 FROM python:3
 WORKDIR /usr
 COPY requirements.txt ./
-RUN pip install -r requirment.txt
+RUN pip install -r requirement.txt
 COPY . .
 EXPOSE 5000
 CMD ["python","-m","flask","run"]
