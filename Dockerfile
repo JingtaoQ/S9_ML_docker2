@@ -1,8 +1,8 @@
 # Dockerfile to build a flask app
 FROM python:3
-WORKDIR /Dockerfile
+WORKDIR /usr
 COPY requirements.txt ./
 RUN pip install -r requirment.txt
 COPY . .
 EXPOSE 5000
-CMD ["python","-m","unittest"]
+CMD ["python","-m","flask","run"]
